@@ -52,4 +52,8 @@ Replace these paths in the script before running:
 - Input Text File: text_path = "/Users/yourname/demofile/textfile.txt"  # Replace with your desired text file path
 - Output Audio Folder: output_folder = ""/Users/yourname/demofile/audiofiles" # Replace with your desired output folder
 
+Notes:
+Keep the JSON file private (avoid committing it to public repos).
+Ensure the path in your code matches your local file location.
+
 
