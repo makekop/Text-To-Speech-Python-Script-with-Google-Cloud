@@ -18,7 +18,9 @@ This is a Python-based text-to-speech application that reads text from a text fi
   pip3 install google-cloud-texttospeech
 - Google Cloud Service Account Credentials.
 
-# Part 1: Google Cloud Text-to-Speech API Setup Guide (If you already have the API Key or required Credentials you can skip to Part 2)
+# Part 1: Google Cloud Text-to-Speech API Setup Guide:
+
+(If you already have the API Key or required Credentials you can skip to Part 2 of README)
 
 Create a Google Cloud Project:
 1. Log in or Sign Up to Google Cloud Console: https://console.cloud.google.com/
@@ -45,12 +47,12 @@ Generate JSON Key:
 4. Select "JSON" and click "Create".
 5. Save the file and rename it to something relevant
 
-# Part 2: Script Conguration.
+# Part 2: Script Conguration:
 
 Replace these paths in the script before running:
-- Google Cloud Credentials: credential_path = "/Users/yourname/demofile/authorization.json" # Replace with your desired JSON key path
-- Input Text File: text_path = "/Users/yourname/demofile/textfile.txt"  # Replace with your desired text file path
-- Output Audio Folder: output_folder = ""/Users/yourname/demofile/audiofiles" # Replace with your desired output folder
+- Google Cloud Credentials: credential_path = "demofile/authorization.json" # Replace with your desired JSON key path
+- Input Text File: text_path = "demofile/textfile.txt"  # Replace with your desired text file path
+- Output Audio Folder: output_folder = "demofile/audiofiles" # Replace with your desired output folder
 
 Notes:
 Keep the JSON file private (avoid committing it to public repos).

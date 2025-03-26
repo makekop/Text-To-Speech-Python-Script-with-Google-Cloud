@@ -2,16 +2,16 @@ import os
 from google.cloud import texttospeech # Import Text-To-Speech API from Google Cloud
 
 # Verify your Google Cloud Credentials with using os.environ 
-credential_path = "/Users/yourname/demofile/authorization.json" # Replace this part with your own file path
+credential_path = "demofile/authorization.json" # Replace this part with your own file path
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
 
 # Set up client
 client = texttospeech.TextToSpeechClient()
 
 # Read the text file from the file path you've set
-text_path = "/Users/yourname/demofile/textfile.txt" #Replace this part with your own file path
+text_path = "demofile/textfile.txt" #Replace this part with your own file path
 with open(text_path, "r", encoding="utf-8") as text_file:
-    text_block = text_file.read().strip()  # Read file content and remove extra spaces
+    text_block = text_file.read().strip()
 
 # Define the text input
 synthesis_input = texttospeech.SynthesisInput(text=text_block)
@@ -37,7 +37,7 @@ response = client.synthesize_speech(
 )
 
 # Create an output file path where you want your audio files saved
-output_folder = "/Users/yourname/demofile/audiofiles" # Replace this part with your own path
+output_folder = "demofile/audiofiles" # Replace this part with your own path
 
 # Get a unique filename 
 def get_unique_filename(base_filename="output.mp3"):
