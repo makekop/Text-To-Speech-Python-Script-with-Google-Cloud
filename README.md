@@ -18,7 +18,7 @@ This is a Python-based text-to-speech application that reads text from a text fi
   pip3 install google-cloud-texttospeech
 - Google Cloud Service Account Credentials.
 
-# Part 1: Google Cloud Text-to-Speech API Setup Guide (If you already have the API Key or required Credentials you can skip to PART2)
+# Part 1: Google Cloud Text-to-Speech API Setup Guide (If you already have the API Key or required Credentials you can skip to Part 2)
 
 Create a Google Cloud Project:
 1. Log in or Sign Up to Google Cloud Console: https://console.cloud.google.com/
