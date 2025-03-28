@@ -1,6 +1,6 @@
 # Text-To-Speech Python Script with Google Cloud
 
-This is a Python-based text-to-speech application that reads text from a text file and converts it into an audio file (MP3) using Google Cloud's Text-to-Speech API. The generated audio files are saved with unique filenames to avoid overwriting.
+This is a Python-based text-to-speech application that reads text from a text file and converts it into an audio file (MP3) using Google Cloud's Text-to-Speech API. The generated audio files are saved with unique filenames to avoid overwriting. This repository includes a sample text file and an audio file to demonstrate how the text-to-speech application works in practice.
 
 ---
 
