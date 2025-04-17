@@ -27,7 +27,7 @@ google-cloud-texttospeech==2.15.0
 
 1. **Google Cloud Service Account**
 
-- Follow the setup guide from the [google_cloud file](../main/google_cloud/README.md) to enable the API and create a service account.
+- Follow the setup guide from the [google_cloud file](../google_cloud/README.md) to enable the API and create a service account.
 - Save the JSON file locally (e.g., `authorization.json`).
 
 2. **Edit the credential path in `CloudSpeechflask.py`:**

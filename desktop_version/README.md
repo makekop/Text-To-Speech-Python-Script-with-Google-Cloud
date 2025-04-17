@@ -20,7 +20,7 @@ This is a Python-based text-to-speech application that reads text from a text fi
 # Configuration
 1. **Google Cloud Service Account**
 
-- Follow the setup guide from the [google_cloud file](../main/google_cloud/README.md) to enable the API and create a service account.
+- Follow the setup guide from the [google_cloud file](../google_cloud/README.md) to enable the API and create a service account.
 - Save the JSON file locally (e.g., `authorization.json`).
 
 2. **Edit the credential path in `CloudSpeechflask.py`:**
@@ -31,7 +31,6 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
 ```
 
 # Script Conguration:
-
 Replace these paths in the script before running:
 - Google Cloud Credentials: credential_path = "demofile/authorization.json" # Replace with your desired JSON key path
 - Input Text File: text_path = "demofile/textfile.txt"  # Replace with your desired text file path
