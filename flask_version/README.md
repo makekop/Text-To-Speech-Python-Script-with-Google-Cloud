@@ -23,12 +23,11 @@ pip install -r requirements.txt
 Flask==2.2.5
 google-cloud-texttospeech==2.15.0
 ```
-
 ## Configuration
 
 1. **Google Cloud Service Account**
 
-- Follow the setup guide from the [original README](../main/README.md) to enable the API and create a service account.
+- Follow the setup guide from the [google_cloud file](../main/google_cloud/README.md) to enable the API and create a service account.
 - Save the JSON file locally (e.g., `authorization.json`).
 
 2. **Edit the credential path in `CloudSpeechflask.py`:**
@@ -65,6 +64,43 @@ Then open your browser and go to:
 ```
 http://127.0.0.1:5000/
 ```
+## **Environment Configuration**  
+You may set your environment variable differently depending on your operating system:  
+
+### **MacOS/Linux:**  
+Add the following line to your terminal or shell configuration file (e.g., `~/.zshrc`, `~/.bashrc`, or `~/.bash_profile`):  
+```bash  
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/authorization.json"  
+```  
+Then run:  
+```bash  
+source ~/.zshrc  # or ~/.bashrc, ~/.bash_profile depending on your shell  
+```  
+
+Alternatively, you can set the environment variable directly in the Python script:  
+```python  
+import os  
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/path/to/your/authorization.json"  
+```  
+
+### **Windows (Command Prompt):**  
+Run the following command in Command Prompt:  
+```cmd  
+set GOOGLE_APPLICATION_CREDENTIALS=C:\path\to\your\authorization.json  
+```  
+
+Or in PowerShell:  
+```powershell  
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\path\to\your\authorization.json"  
+```  
+
+Alternatively, set it directly in the Python script:  
+```python  
+import os  
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\path\\to\\your\\authorization.json"  
+```  
+
+---
 
 ## Notes
 
