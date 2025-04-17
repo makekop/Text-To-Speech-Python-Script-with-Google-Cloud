@@ -8,7 +8,6 @@ This is a Python-based text-to-speech application that reads text from a text fi
 - Converts text from a text file into speech.
 - Supports Google Cloud's natural-sounding voices.
 - Saves audio output with unique filenames to avoid overwriting.
-
 ---
 
 ## Requirements:
