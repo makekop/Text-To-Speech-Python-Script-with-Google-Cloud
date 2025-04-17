@@ -18,36 +18,20 @@ This is a Python-based text-to-speech application that reads text from a text fi
   pip3 install google-cloud-texttospeech
 - Google Cloud Service Account Credentials.
 
-# Part 1: Google Cloud Text-to-Speech API Setup Guide:
+# Configuration
+1. **Google Cloud Service Account**
 
-(If you already have the API Key or required Credentials you can skip to Part 2 of README)
+- Follow the setup guide from the [google_cloud file](../main/google_cloud/README.md) to enable the API and create a service account.
+- Save the JSON file locally (e.g., `authorization.json`).
 
-Create a Google Cloud Project:
-1. Log in or Sign Up to Google Cloud Console: https://console.cloud.google.com/
-2. Click "Create Project"
-3. Enter a project name and click "Create".
+2. **Edit the credential path in `CloudSpeechflask.py`:**
 
-Enable the Text-to-Speech API:
-1. From the top left navigation menu, go to APIs & Services > Library.
-2. Search for "Cloud Text-to-Speech API".
-3. Click on the API and press "Enable".
+```python
+credential_path = "/your/local/path/authorization.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
+```
 
-Create Service Account & Credentials:
-1. Go to APIs & Services > Credentials.
-2. Click "+ Create Credentials" > "Service Account".
-3. Enter a name for the service account (e.g., `tts-service-account`).
-4. Click "Create and Continue".
-5. Under Role, search for "Cloud Text-to-Speech Agent" and select it.
-6. Click "Done".
-
-Generate JSON Key:
-1. Under Service Accounts, find your new account and click on it.
-2. Go to the Keys tab.
-3. Click "Add Key" > "Create New Key".
-4. Select "JSON" and click "Create".
-5. Save the file and rename it to something relevant
-
-# Part 2: Script Conguration:
+# Script Conguration:
 
 Replace these paths in the script before running:
 - Google Cloud Credentials: credential_path = "demofile/authorization.json" # Replace with your desired JSON key path
