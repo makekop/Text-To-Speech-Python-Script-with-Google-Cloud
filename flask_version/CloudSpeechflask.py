@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-credential_path = "/Users/markuskoponen/Coding/TextToSpeech/authorizationgoogle.json"
+credential_path = "demofile/authorization.json"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
 
 @app.route("/", methods=["GET", "POST"])
