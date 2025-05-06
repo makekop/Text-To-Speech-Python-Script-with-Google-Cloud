@@ -9,6 +9,8 @@ client = texttospeech.TextToSpeechClient()
 text_path = "demofile/textfile.txt"
 with open(text_path, "r", encoding="utf-8") as text_file:
     text_block = text_file.read().strip()
+    character_count = len(text_block)
+    print(f"character count is: {character_count}")
 
 synthesis_input = texttospeech.SynthesisInput(text=text_block)
 
